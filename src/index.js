@@ -1,3 +1,5 @@
+import "./styles/main.scss";
+
 // const events = [];
 
 // const saveToStorage = () => {
