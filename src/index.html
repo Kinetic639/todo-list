@@ -12,29 +12,48 @@
     <main class="container-main">
         <section class='container-form'>
             <h1>Add new task</h1>
-            <div class="all-tasks">
-                <h2 class="task-list-title">My list</h2>
-                <ul class="task-list">
-                    <li class="active">Youtube</li>
-                    <li>Work</li>
-                    <li>Grocery</li>
-                </ul>
-
-                <form action="">
-                    <input type="text" class="new list" placeholder="new list name" aria-label='new list name'>
-                    <button class="btn list" aria-label="create new list">+</button>
-                </form>
+            <form action="" class='form-main'>
+                <select name="" id="">
+                    <option selected='true' value="disabled" disabled>Select type</option>
+                    <option value="task">Task</option>
+                    <option value="meeting">Meeting</option>
+                    <option value="shopping-list">Shopping list</option>
+                </select>
+                <input type="text" class="form-input task-title" placeholder="Task title">
+                <input type="date" class="form-input form-input-date" id="start" name="trip-start" value="">
+                <div class="form-meeting">
+                    <input class="form-input" type="text" placeholder="meeting place">
+                </div>
+                <div class="form-shopping-list">
+                    <h2>Shopping list</h2>
+                    <ul class="shopping-list">
+                        <li class="shopping-list-item">item 1</li>
+                        <li class="shopping-list-item">item 2</li>
+                        <li class="shopping-list-item">item 3</li>
+                        <li class="shopping-list-item">item 4</li>
+                        <li class="shopping-list-item">item 5</li>
+                    </ul>
+                    <div class="shopping-list-cta">
+                        <input class="form-input form-input-item" type="text" placeholder="Add new item">
+                        <input class="form-input form-input-amount" type="text" placeholder="amount">
+                        <button class="">Add +</button>
+                    </div>
+                </div>
+                <input type="text" class="form-input task-description" placeholder="Task description">
+                <button class="btn list" aria-label="create new list">+</button>
+            </form>
             </div>
         </section>
 
         <section class="container-todo-list">
-            <header class="todo-list-header"><span class="block-span block-span-title">Your events</span><span class="block-span block-span-amount">0</span></header>
+            <header class="todo-list-header"><span class="block-span block-span-title">Your events</span><span
+                    class="block-span block-span-amount">0</span></header>
             <div class="todo-list">
                 <div class="todo-card">
                     <div class="todo-card__icon"></div>
                     <div class="todo-card__main">
                         <h2>Task example</h2>
-                        <p>22.11.2019    15:00</p>
+                        <p>22.11.2019 15:00</p>
                     </div>
                     <div class="todo-card__menu">
                         <button class='btn btn-delete'>X</button>

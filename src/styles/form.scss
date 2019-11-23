@@ -1,6 +1,56 @@
 .container-form {
-    background-color: $bg;
-    flex: 1;
-    margin-right: 2rem;
-    min-height: 700px;
+  background-color: $bg;
+  flex: 1;
+  margin-right: 2rem;
+  min-height: 700px;
+
+  & h1 {
+    margin: 5rem auto;
+  }
+}
+
+.form {
+  &-main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #dcd6d6;
+    margin: 1.5rem 0;
+    line-height: 200%;
+    padding-left: 0.5rem;
+    &::placeholder {
+        color: rgb(180, 180, 180);
+    }
+    &-item {
+        width: 50%;
+        margin-right: 2rem;
+    }
+    &-amount {
+        width: 20%;
+        margin-right: 2rem;
+    }
+    &-date {
+        color: #dcd6d6;
+        font-size: 1.6rem;
+    }
+  }
+  &-shopping-list {
+      & h2 {
+          margin-bottom: 1.5rem;
+      }
+  }
+}
+.shopping-list {
+  &-item {
+      margin-left: 1.5rem;
+  }
+  &-cta {
+      display: flex;
+  }
 }

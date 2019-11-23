@@ -1,27 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 
 html {
-
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: $color-white;
-    font-size: $rem-size;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: $color-white;
+  font-size: $rem-size;
 }
 
 h1 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .todo-list-header {
-    font-size: 2.4rem;
-    line-height: 13rem;
+  font-size: 2.4rem;
+  line-height: 13rem;
 }
 
 .todo-card {
-    color: #555555;
+  color: #555555;
+}
+
+////forms
+.form {
+  &-main {
+  }
+
+  &-input {
+    font-size: 1.6rem;
+    color: $color-white;
+  }
+}
+
+.form {
+  &-input {
+    &-date {
+        font-family: inherit;
+      color: #dcd6d6;
+      font-size: 1.6rem;
+    }
+  }
 }
