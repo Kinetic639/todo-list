@@ -13,18 +13,18 @@
         <section class='container-form'>
             <h1>Add new task</h1>
             <form action="" class='form-main'>
-                <select name="" id="">
-                    <option selected='true' value="disabled" disabled>Select type</option>
-                    <option value="task">Task</option>
-                    <option value="meeting">Meeting</option>
-                    <option value="shopping-list">Shopping list</option>
+                <select name="" id="select-type" class="select-type">
+                    <!-- <option selected='true' value="disabled" disabled>Select type</option> -->
+                    <option value="task" class="select-type-option">Task</option>
+                    <option value="meeting" class="select-type-option">Meeting</option>
+                    <option value="shopping-list" class="select-type-option">Shopping list</option>
                 </select>
                 <input type="text" class="form-input task-title" placeholder="Task title">
                 <input type="date" class="form-input form-input-date" id="start" name="trip-start" value="">
-                <div class="form-meeting">
+                <div class="form-meeting hidden" id="meeting-container">
                     <input class="form-input" type="text" placeholder="meeting place">
                 </div>
-                <div class="form-shopping-list">
+                <div class="form-shopping-list hidden" id="shopping-container">
                     <h2>Shopping list</h2>
                     <ul class="shopping-list">
                         <li class="shopping-list-item">item 1</li>
@@ -39,8 +39,8 @@
                         <button class="">Add +</button>
                     </div>
                 </div>
-                <input type="text" class="form-input task-description" placeholder="Task description">
-                <button class="btn list" aria-label="create new list">+</button>
+                <textarea class="form-input task-description" placeholder="comment"></textarea>
+                <button type="submit" class="btn-submit list" id="btn-submit" aria-label="create new list">+</button>
             </form>
             </div>
         </section>

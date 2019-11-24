@@ -24,33 +24,48 @@
     margin: 1.5rem 0;
     line-height: 200%;
     padding-left: 0.5rem;
+
     &::placeholder {
-        color: rgb(180, 180, 180);
+      color: rgb(180, 180, 180);
+    }
+
+    &:focus {
+      background-color: #596ccc;
+      outline: none;
+      border-color: #2e97ff;
+      transition: $transition-fast;
     }
     &-item {
-        width: 50%;
-        margin-right: 2rem;
+      width: 50%;
+      margin-right: 2rem;
     }
     &-amount {
-        width: 20%;
-        margin-right: 2rem;
+      width: 20%;
+      margin-right: 2rem;
     }
     &-date {
-        color: #dcd6d6;
-        font-size: 1.6rem;
+      color: #dcd6d6;
+      font-size: 1.6rem;
     }
   }
   &-shopping-list {
-      & h2 {
-          margin-bottom: 1.5rem;
-      }
+    & h2 {
+      margin-bottom: 1.5rem;
+    }
   }
 }
 .shopping-list {
   &-item {
-      margin-left: 1.5rem;
+    margin-left: 1.5rem;
   }
   &-cta {
-      display: flex;
+    display: flex;
   }
+}
+
+.select-type {
+  border: none;
+  width: 35%;
+  background-color: #2e97ff;
+  padding: 0.7rem 0.4rem;
 }
